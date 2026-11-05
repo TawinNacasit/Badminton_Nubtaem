@@ -1,0 +1,26 @@
+<div class="page" onswipe="swipeEvent">
+  <div class="status-row">
+    <text class="status-dot {{ connection }}">●</text>
+    <text class="status">{{ statusText }}</text>
+    <text class="games">{{ gamesWonA }}–{{ gamesWonB }}</text>
+  </div>
+  <div class="scores">
+    <div class="team a">
+      <text class="name">{{ teamNameA }}</text>
+      <text class="score">{{ teamA }}</text>
+      <input type="button" class="plus" value="+1" onclick="incrementA" disabled="{{ gameOver }}" />
+    </div>
+    <div class="team b">
+      <text class="name">{{ teamNameB }}</text>
+      <text class="score">{{ teamB }}</text>
+      <input type="button" class="plus" value="+1" onclick="incrementB" disabled="{{ gameOver }}" />
+    </div>
+  </div>
+  <div class="actions">
+    <input type="button" value="− A" onclick="decrementA" />
+    <input type="button" value="Undo" onclick="undo" />
+    <input type="button" value="− B" onclick="decrementB" />
+  </div>
+  <input if="{{ gameOver }}" type="button" class="next" value="{{ matchOver ? 'New match' : 'Next game' }}" onclick="advance" />
+</div>
+

@@ -1,0 +1,33 @@
+{
+  "protocolVersion": 1,
+  "commands": [
+    {
+      "type": "SCORE_COMMAND",
+      "matchId": "local-match-001",
+      "commandId": "fixture-inc-a-001",
+      "senderId": "watch-01",
+      "baseRevision": 12,
+      "action": "INCREMENT",
+      "team": "A",
+      "timestamp": 1793780000000
+    }
+  ],
+  "states": [
+    {
+      "type": "SCORE_STATE",
+      "matchId": "local-match-001",
+      "revision": 13,
+      "teamA": 18,
+      "teamB": 16,
+      "teamNameA": "Team A",
+      "teamNameB": "Team B",
+      "mode": "BADMINTON_21",
+      "gameNumber": 1,
+      "gamesWonA": 0,
+      "gamesWonB": 0,
+      "gameOver": false,
+      "matchOver": false,
+      "lastCommandId": "fixture-inc-a-001"
+    }
+  ]
+}

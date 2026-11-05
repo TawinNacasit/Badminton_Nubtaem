@@ -1,0 +1,16 @@
+node_modules/
+dist/
+**/build/
+.vite/
+.gradle/
+.kotlin/
+local.properties
+*.jks
+*.keystore
+*.p12
+.idea/
+*.iml
+android/app/release/
+watch/**/build/
+watch/**/.preview/
+

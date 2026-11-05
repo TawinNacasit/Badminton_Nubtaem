@@ -1,0 +1,29 @@
+{
+  "app": {
+    "bundleName": "com.nubtam.badmintonscore.watch",
+    "vendor": "nubtam",
+    "version": { "code": 2000000, "name": "0.2.0" }
+  },
+  "deviceConfig": {},
+  "module": {
+    "deviceType": ["liteWearable"],
+    "distro": { "deliveryWithInstall": true, "moduleName": "entry", "moduleType": "entry" },
+    "abilities": [{
+      "name": ".MainAbility",
+      "srcLanguage": "js",
+      "srcPath": "MainAbility",
+      "description": "$string:MainAbility_desc",
+      "label": "$string:MainAbility_label",
+      "type": "page"
+    }],
+    "metaData": {
+      "customizeData": [{
+        "name": "supportLists",
+        "value": "REPLACE_ANDROID_PACKAGE:REPLACE_ANDROID_SHA256_FINGERPRINT",
+        "extra": ""
+      }]
+    },
+    "js": [{ "pages": ["pages/index/index"], "name": ".MainAbility" }]
+  }
+}
+
